@@ -8,6 +8,11 @@
 Console.WriteLine ("Введите трехзначное число");
  int num = Convert.ToInt32(Console.ReadLine());
  int res = (num /10 ) % 10;
+ 
+ if (num < 0)
+ {
+    num = -num;
+ }
 if (num > 100 && num < 1000 )
 {
  Console.WriteLine($"Вторая цифра числа : {res}");
